@@ -34,7 +34,7 @@ This document will help you **upgrade your application** previous NIS1 features,
    Keccak-SHA3-512; SHA-512
    Fixed Fees; Dynamic Fees
    — ; Receipts
-   — ; Merkle Proofs
+   — ; Merkle Proof
 
 ************
 Test network
@@ -43,7 +43,7 @@ Test network
 At the time of writing, the main public network has not been launched.
 Right now, there are two options to start testing Symbol.
 
-* **Public test network** The public test network uses the same technology and features of the future main public network. You can use the testnet to experiment with the offered transaction set in a live network without the loss of valuable assets. To start using the test net, follow :doc:`this guide <../../getting-started/setup-workstation>`.
+* **Public test network** The public test network uses the same technology and features of the future main public network. You can use the testnet to experiment with the offered transaction set in a live network without the loss of valuable assets. To start using the test net, see :doc:`Setup your workstation <../../getting-started/setup-workstation>` guide.
 
 * **Private test network**: To run a private test network, use the package |catapult-service-bootstrap|. This software suite contains the necessary setup scripts to build a network for development and learning purposes with just one command.
 
@@ -124,7 +124,7 @@ Notable changes have happened at protocol level with regards to :doc:`mosaics <.
 In fact, NIS1 namespaces expire altogether with assets linked to them.
 |codename| mosaics are configured to have their own ``duration``, as well as being assigned a unique ``nonce`` value.
 
-Lastly, levies are not available on |codename.
+Lastly, levies are not available on |codename|.
 
 **See also**:
 
@@ -135,7 +135,7 @@ Namespaces
 **********
 
 Namespaces can still refer to mosaics using :ref:`AliasTransactions <mosaic-alias-transaction>`.
-A namespace owner can attach either of an account or a mosaic id to one of its' namespaces.
+A namespace owner can attach either of an account or a mosaic id to one of its namespaces.
 The namespace information endpoint will return the linked object in the alias field.
 
 Also, |codename| root namespaces have a ``duration`` field that is **expressed in a count of blocks** which means yearly renewal is not mandatory anymore.
